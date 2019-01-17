@@ -8,15 +8,11 @@ public class pyramidPattern5 {
         }
     }
     private static void printPattern5(int rows) {
-        // for loop for the rows
         for (int i = rows; i >= 1; i--) {
-            // white spaces in the front of the numbers
             int numberOfWhiteSpaces = i*2;
 
-            //print leading white spaces
             printString(" ", numberOfWhiteSpaces);
 
-            //print numbers
             for(int x=i; x<=rows; x++) {
                 System.out.print(x+" ");
             }
@@ -24,7 +20,6 @@ public class pyramidPattern5 {
                 System.out.print(j+" ");
             }
 
-            //move to next line
             System.out.println("");
         }
     }
